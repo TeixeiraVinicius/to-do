@@ -1,0 +1,82 @@
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #262626;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 16px;
+  transition: border-color 0.2s;
+}
+
+.item:hover {
+  border-color: #5E60CE33;
+}
+
+.itemCompleted {
+  background: #1E1E1E;
+}
+
+.checkbox {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #1E6F9F;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F2F2F2;
+  transition: background 0.2s, border-color 0.2s;
+  margin-top: 1px;
+}
+
+.checkbox:hover {
+  border-color: #5E60CE;
+  background: #5E60CE22;
+}
+
+.checkboxChecked {
+  background: #5E60CE;
+  border-color: #5E60CE;
+}
+
+.checkboxChecked:hover {
+  background: #4a4cb8;
+  border-color: #4a4cb8;
+}
+
+.title {
+  flex: 1;
+  color: #F2F2F2;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.titleCompleted {
+  text-decoration: line-through;
+  color: #808080;
+}
+
+.deleteButton {
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #808080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.2s;
+  margin-top: -2px;
+}
+
+.deleteButton:hover {
+  color: #E25858;
+  background: rgba(226, 88, 88, 0.1);
+}
